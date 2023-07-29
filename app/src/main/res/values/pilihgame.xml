@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="spinner">
+        <item>Freefire</item>
+        <item>Mobile legen</item>
+    </string-array>
+
+</resources>

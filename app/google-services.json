@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "745802385019",
+    "firebase_url": "https://quiz-study-again-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "quiz-study-again",
+    "storage_bucket": "quiz-study-again.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745802385019:android:4d8f577bd1ad972c8c04de",
+        "android_client_info": {
+          "package_name": "com.diamondprize.quizme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745802385019-dpfmo4bf2ek5t39ge4674vh4bnugd6n3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbXT1nWgth7EXL-_u-CnS6fiNNA9MHtaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745802385019-dpfmo4bf2ek5t39ge4674vh4bnugd6n3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    tools:context="com.diamondprize.quizme.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_bottom"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/avatar"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.053"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:id="@+id/nameCoin"
+                    android:layout_width="228dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/tombolprofil"
+                    android:drawableLeft="@drawable/ic_baseline_currency_bitcoin_24"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="10dp"
+                    android:textColor="@color/color_white"
+                    android:textSize="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/profileImage"
+                    app:layout_constraintTop_toTopOf="@+id/profileImage" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" IDR ="
+                    android:textColor="#FBC02D"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/nameCoinrp"
+                    app:layout_constraintEnd_toStartOf="@+id/nameCoinrp"
+                    app:layout_constraintStart_toStartOf="@+id/nameCoin"
+                    app:layout_constraintTop_toBottomOf="@+id/nameCoin" />
+
+                <TextView
+                    android:id="@+id/nameCoinrp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="5dp"
+                    android:textColor="@color/color_white"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/nameCoin" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/EmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/tombolprofil"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="15dp"
+                android:drawableTint="#FDDA41"
+                android:ems="10"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="15dp"
+                android:textColor="@color/color_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+            <TextView
+                android:id="@+id/nameBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/tombolprofil"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="5dp"
+                android:drawableTint="#FDDA41"
+                android:ems="10"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="15dp"
+                android:textColor="@color/color_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EmailAddress" />
+
+            <TextView
+                android:id="@+id/namePass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/tombolprofil"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="5dp"
+                android:drawableTint="#FDDA41"
+                android:ems="10"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="15dp"
+                android:textColor="@color/color_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameBox" />
+
+
+            <Button
+                android:id="@+id/sendKeluar"
+                android:layout_width="161dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_3"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="5dp"
+                android:text="Logout"
+                android:textColor="@color/color_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/startAppMrec" />
+
+            <com.startapp.sdk.ads.banner.Mrec
+                android:id="@+id/startAppMrec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp">
+
+            </com.startapp.sdk.ads.banner.Mrec>
+
+            <!-- view for AdMob Banner Ad -->
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/ad_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:adSize="BANNER"
+                app:adUnitId="@string/banner_ad_unit_id"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

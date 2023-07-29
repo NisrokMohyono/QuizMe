@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.diamondprize.quizme.BlankFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView128"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textbox"
+                android:fontFamily="@font/roboto_bold"
+                android:text="COMPLAIN TO ADMIN"
+                android:textColor="@color/darkOrange"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view7"
+                app:layout_constraintEnd_toEndOf="@+id/view7"
+                app:layout_constraintStart_toStartOf="@+id/view7"
+                app:layout_constraintTop_toTopOf="@+id/view7" />
+
+            <Button
+                android:id="@+id/pes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/textbox"
+                android:text="email : nisrokmohyono@gmail.com"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView129"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textbox"
+                android:fontFamily="@font/roboto_bold"
+                android:text="SOSIAL MEDIA"
+                android:textColor="@color/darkOrange"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view7"
+                app:layout_constraintEnd_toEndOf="@+id/view7"
+                app:layout_constraintStart_toStartOf="@+id/view7"
+                app:layout_constraintTop_toTopOf="@+id/view7" />
+
+
+            <Button
+                android:id="@+id/fb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/textbox"
+                android:text="Facebook : @nisrokmohyono"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/ig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/textbox"
+                android:text="instagram : @nisrokmohyono"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/lkd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/textbox"
+                android:text="linkedin : @nisrokmohyono"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/tele"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/textbox"
+                android:text="telegram : @nisrokmohyono"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/ptr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/textbox"
+                android:text="pinterest : @nisrokmohyono"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView120"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="15dp"
+                android:text="If you have questions, suggestions, criticism, or anything else, you can contact the admin"
+                android:textColor="@color/shadow_color"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view7"
+                app:layout_constraintEnd_toEndOf="@+id/view7"
+                app:layout_constraintStart_toStartOf="@+id/view7"
+                app:layout_constraintTop_toTopOf="@+id/view7" />
+
+            <Button
+                android:id="@+id/polisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/textbox"
+                android:text="Privacy Policy"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/term"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/textbox"
+                android:text="Terms and Conditions"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

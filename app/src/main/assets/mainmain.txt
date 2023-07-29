@@ -1,0 +1,117 @@
+ private AdView mAdView;
+    CountDownTimer timer;
+    public int counter;
+    Button button;
+    TextView textView;
+    ImageView imageView;
+    User user;
+    //coin
+    int POINTS = 5;
+
+
+ AdView mAdView = findViewById(R.id.adView6);
+        AdView mAdView3 = findViewById(R.id.adView3);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        mAdView3.loadAd(adRequest);
+
+        //coin
+        int correctAnswers = getIntent().getIntExtra("correct", 1);
+        long points = (long) correctAnswers * POINTS;
+        FirebaseFirestore database = FirebaseFirestore.getInstance();
+
+        //coins
+        textView= (TextView) findViewById(R.id.currentCoins);
+        database.collection("users")
+                .document(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                .get().addOnSuccessListener(documentSnapshot -> {
+                    user = documentSnapshot.toObject(User.class);
+                    assert user != null;
+
+
+                });
+
+        // koneksi internet
+        ConnectivityManager connectivity = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivity.getActiveNetworkInfo();
+        if(networkInfo != null && networkInfo.isConnected()){
+            Toast.makeText(getApplicationContext(),"ok", Toast.LENGTH_LONG).show();
+        }else{
+            AlertDialog.Builder alert = new AlertDialog.Builder(this)
+                    .setTitle("No Internet Connection")
+                    .setMessage("Please check your internet connection and try again")
+                    .setPositiveButton("Closed", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            finish();
+                        }
+                    });
+            alert.setCancelable(false);
+            alert.show();
+        }
+
+        button= findViewById(R.id.B_loncat);
+        button.setOnClickListener(v -> {
+            Intent intent =new Intent(BermainMainActivity.this,  GameLoncatActivity.class);
+            startActivity(intent);
+            database.collection("users")
+                    .document(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                    .update("coins", FieldValue.increment(points));
+        });
+        imageView= findViewById(R.id.Pesawat);
+        imageView.setOnClickListener(v -> {
+            Intent intent =new Intent(BermainMainActivity.this,  GameBocilActivity.class);
+            startActivity(intent);
+            database.collection("users")
+                    .document(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                    .update("coins", FieldValue.increment(points));
+        });
+        button= findViewById(R.id.button7);
+        button.setOnClickListener(v -> {
+            Intent intent =new Intent(BermainMainActivity.this,  GameBakpaoooActivity.class);
+            startActivity(intent);
+            database.collection("users")
+                    .document(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                    .update("coins", FieldValue.increment(points));
+        });
+        imageView= findViewById(R.id.button8);
+        imageView.setOnClickListener(v -> {
+            Intent intent =new Intent(BermainMainActivity.this,  GameJellyOkActivity.class);
+            startActivity(intent);
+            database.collection("users")
+                    .document(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                    .update("coins", FieldValue.increment(points));
+        });
+
+        imageView= findViewById(R.id.Bolaa);
+        imageView.setOnClickListener(v -> {
+            Intent intent =new Intent(BermainMainActivity.this,  GameBolaActivity.class);
+            startActivity(intent);
+            database.collection("users")
+                    .document(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                    .update("coins", FieldValue.increment(points));
+        });
+        imageView= findViewById(R.id.PecahBuahh);
+        imageView.setOnClickListener(v -> {
+            Intent intent =new Intent(BermainMainActivity.this,  GamePecahBuahActivity.class);
+            startActivity(intent);
+            database.collection("users")
+                    .document(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                    .update("coins", FieldValue.increment(points));
+        });
+        imageView= findViewById(R.id.GameMishi);
+        imageView.setOnClickListener(v -> {
+            Intent intent =new Intent(BermainMainActivity.this,  GameTerjepitActivity.class);
+            startActivity(intent);
+            database.collection("users")
+                    .document(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                    .update("coins", FieldValue.increment(points));
+        });
+        imageView= findViewById(R.id.GameBasket);
+        imageView.setOnClickListener(v -> {
+            Intent intent =new Intent(BermainMainActivity.this,  GameBasketActivity.class);
+            startActivity(intent);
+            database.collection("users")
+                    .document(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()))
+                    .update("coins", FieldValue.increment(points));
+        });

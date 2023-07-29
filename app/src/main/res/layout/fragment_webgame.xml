@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context=".WebgameFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView1e1"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="36dp"
+            android:layout_weight="1"
+            android:src="@drawable/ff7676"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="1dp"
+            android:src="@drawable/ml778"
+            app:layout_constraintStart_toEndOf="@+id/imageView1e1"
+            app:layout_constraintTop_toTopOf="@+id/imageView1e1" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="1dp"
+            android:src="@drawable/dana"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView17"
+            app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/gopay656"
+            app:layout_constraintStart_toStartOf="@+id/imageView1e1"
+            app:layout_constraintTop_toBottomOf="@+id/imageView1e1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

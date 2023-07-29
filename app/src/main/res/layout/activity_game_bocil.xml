@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.diamondprize.quizme.GameBocilActivity">
+
+    <!-- res/layout/activity_game_bocil.xml -->
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ad_view">
+
+
+        <Button
+            android:id="@+id/delayedButton"
+            android:layout_width="111dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="261dp"
+            android:layout_marginTop="403dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="321dp"
+            android:layout_x="272dp"
+            android:layout_y="403dp"
+            android:background="#00FFFFFF"
+            android:foreground="@drawable/hadiah"
+            android:text="Claim"
+            android:visibility="invisible" />
+    </WebView>
+
+    <FrameLayout
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

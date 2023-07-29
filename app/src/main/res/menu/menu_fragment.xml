@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:title="FREEFIRE"
+        android:icon="@drawable/wallet_white"/>
+    <item android:id="@+id/rank"
+        android:title="MOBILE LEGENDS"
+        android:icon="@drawable/wallet_white"/>
+
+    <item android:id="@+id/wallet"
+        android:title="DANA"
+        android:icon="@drawable/wallet_white"/>
+
+    <item android:id="@+id/profile"
+        android:title="GOPAY"
+        android:icon="@drawable/wallet_white"/>
+
+</menu>

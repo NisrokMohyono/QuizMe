@@ -1,0 +1,56 @@
+ binding.bottomBar.setOnItemSelectedListener(i -> {
+            FragmentTransaction transaction1 = getSupportFragmentManager().beginTransaction();
+            switch (i) {
+                case 0:
+                    transaction1.replace(R.id.content, new FreefireFragment());
+                    transaction1.commit();
+                    break;
+                case 1:
+                    transaction1.replace(R.id.content, new MlFragment());
+                    transaction1.commit();
+                    break;
+                case 2:
+                    transaction1.replace(R.id.content, new DanaFragment());
+                    transaction1.commit();
+                    break;
+                case 3:
+                    transaction1.replace(R.id.content, new GopayFragment());
+                    transaction1.commit();
+                    break;
+            }
+            return false;
+        });
+
+
+
+kuis
+
+
+ public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.option_1:
+            case R.id.option_2:
+            case R.id.option_3:
+            case R.id.option_4:
+                if(timer!=null) timer.cancel();
+                TextView selected = (TextView) view;
+                checkAnswer(selected);
+
+
+                reset();
+
+                if(index <= questions.size()) {
+
+                    index++;
+                    setNextQuestion();
+                } else {
+                    Intent intent = new Intent(QuizActivity.this, ResultActivity.class);
+                    intent.putExtra("correct", correctAnswers);
+                    intent.putExtra("total", questions.size());
+                    startActivity(intent);
+                    //Toast.makeText(this, "Quiz Finished.", Toast.LENGTH_SHORT).show();
+                }
+                break;
+
+        }
+    }
